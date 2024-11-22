@@ -1,5 +1,7 @@
 The application prints "Hello world!".
 
+Remote: https://github.com/HeisenBurg55/market-prediction
+
 Git commands used:
 #create market-prediction.py file
 
@@ -33,8 +35,50 @@ git branch -a #check that I switched to the feature/add-about-project branch
 
 #create appinfo.txt file
 
+git status
+
 git add appinfo.txt
+
+git commit -m 'Add appinfo.txt' appinfo.txt #commit
+
+git log
+
+git checkout main
+
+#change commit message to "Hello world!!!!!"
 
 git status
 
-git commit -m 'Add appinfo.txt' appinfo.txt #commit
+git add market-prediction.py
+
+git commit -m 'change message to "Hello world!!!!!" ' market-prediction.py
+
+git push origin main
+
+git checkout feature/add-about-project
+
+git pull origin main #failed because of divergent branches
+
+git pull --rebase origin main #pull with rebasing to move feature branch history on top of updated main branch history
+
+git log
+
+git push -u origin feature/add-about-project #create new remote branch feature/add-about-project and set as upstream
+
+#add latest git commands to appinfo.txt and also add the remote link at the beginning
+
+git status
+
+git add appinfo.txt
+
+git commit -m 'add latest git commands to appinfo.txt and also add the remote link at the beginning' appinfo.txt
+
+git log
+
+git push origin feature/add-about-project
+
+
+
+
+
+
